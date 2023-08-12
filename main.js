@@ -1,7 +1,7 @@
 const sizeOfGrid = 16;
 const resetButton = document.querySelector('button');
 const container = document.querySelector('.container');
-const promptBtn = document.getElementById('#promptBtn');
+const promptBtn = document.querySelector('#promptBtn');
 
 
 const createGrid = (sizeOfGrid) => {
