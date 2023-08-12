@@ -20,9 +20,10 @@ const createGrid = (sizeOfGrid) => {
             gridBox.style.height = `${widthAndHeight}px`;
             
             gridBox.addEventListener('mouseenter', () => {
-                gridBox.style.backgroundColor = 'black';
-            });
-
+                let changeColor = "#" + Math. floor(Math. random()*16777215). toString(16). padStart(6, '0'). toUpperCase();
+                gridBox.style.backgroundColor = changeColor;
+            })
+            
             row.appendChild(gridBox);
         };
 
